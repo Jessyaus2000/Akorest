@@ -1,0 +1,5 @@
+<div>
+    <h1 style="text-align:center;">MEETING</h1>
+    <img src="images/6.jpg" alt="" style="width:100%;">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas doloremque vel voluptatem doloribus, quos quibusdam. Omnis itaque excepturi, unde ducimus maiores veniam blanditiis harum autem minima pariatur. Dicta, modi amet iusto deserunt deleniti nam ab laudantium nostrum ad! Deserunt ratione impedit ex sapiente? Earum reiciendis minus itaque ipsam nobis maiores debitis, corporis consectetur quod? Omnis voluptas eligendi, hic tenetur molestiae eos similique ut dolorum amet alias nihil nostrum quibusdam officiis atque? Qui quaerat eius veritatis laboriosam ex nam impedit autem itaque minus vero. Modi explicabo saepe repellat ad eius, libero iusto incidunt assumenda, illum nam inventore quasi, pariatur laboriosam exercitationem.</p>
+</div>

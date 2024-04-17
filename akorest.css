@@ -1,0 +1,267 @@
+body {
+  --top-row-height: 50px;
+  background-color: white;
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+}
+nav {
+  width: 1800px;
+  position: fixed;
+  top: -20px;
+  z-index: 1;
+}
+.navbar a:hover {
+  color: #f58634;
+}
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5%;
+  background-color: rgba(0, 0, 0, 0.2);
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.navbar {
+  display: flex;
+  margin-left: 300px;
+  margin-top: 15px;
+}
+.navbar li {
+  list-style: none;
+}
+.navbar li a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  padding: 15px;
+  font-weight: bold;
+}
+nav img {
+  width: 150px;
+  margin-top: 5px;
+  margin-right: 50px;
+  padding: 5px;
+}
+.drpdwn {
+  position: relative;
+  display: inline-block;
+}
+.drpdwncnt {
+  z-index: 1;
+  display: none;
+  position: absolute;
+  min-width: 180px;
+  border: solid 1px #f58634;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.drpdwncnt a {
+  display: block;
+  padding: 10px;
+}
+.drpdwncnt a:hover {
+  background-color: none;
+}
+.drpdwn:hover .drpdwncnt {
+  display: block;
+}
+#toggler {
+  display: none;
+  font-size: 30px;
+  color: white;
+}
+
+/*slides*/
+[data-component="slideshow"] .slide {
+  display: none;
+}
+[data-component="slideshow"] .slide.active {
+  display: block;
+}
+.slide img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  padding-top: 0px;
+  position: relative;
+  top: 0px;
+}
+.slide h1 {
+  position: relative;
+  top: -150px;
+  text-align: center;
+  color: #f58634;
+}
+.intro h1 {
+  top: -150px;
+  text-align: center;
+  color: #f58634;
+}
+#line1 {
+  width: 50px;
+  height: 1px;
+  background-color: black;
+  margin: 3px auto;
+}
+#line2 {
+  width: 100px;
+  height: 1px;
+  background-color: black;
+  margin: 3px auto;
+}
+.about {
+  display: flex;
+  margin-top: 40px;
+}
+.about img {
+  width: 60%;
+  position: relative;
+  top: 50px;
+  left: 80px;
+}
+.content {
+  background-color: white;
+  box-shadow: 0px 8px 16px 0px rgb(0, 0, 0, 2);
+  padding-bottom: 40px;
+  padding-left: 40px;
+  padding-right: 40px;
+  font-size: large;
+  position: relative;
+  left: -250px;
+  letter-spacing: 1px;
+}
+.content a {
+  background-color: #f58634;
+  border: none;
+  padding: 15px;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+.gallery {
+  display: flex;
+  gap: 3%;
+  margin-left: 40px;
+}
+.gallery img {
+  width: 30%;
+  position: relative;
+  top: 50px;
+}
+footer {
+  background-color: rgb(0, 0, 0, 0.2);
+  padding: 10px;
+  font-size: large;
+  position: relative;
+  top: 200px;
+}
+footer p {
+  color: #3e4095;
+  text-align: center;
+  margin-top: 20px;
+}
+.footer {
+  display: flex;
+  gap: 15%;
+}
+.footer a {
+  text-decoration: none;
+  display: block;
+  color: white;
+  padding: 5px;
+  font-size: larger;
+}
+.footer a:hover {
+  color: #f58634;
+}
+.footer h2 {
+  color: #3e4095;
+  padding-bottom: 5px;
+  border-bottom: 3px solid #f58634;
+}
+.footer p {
+  color: white;
+  text-align: left;
+}
+.four {
+  padding: 10px;
+  display: flex;
+  margin: 0px;
+  gap: 1%;
+  justify-content: left;
+}
+.four a {
+  color: white;
+  font-size: 25px;
+}
+.container {
+  box-shadow: 0px 8px 16px 0px rgb(0, 0, 0, 2);
+  position: relative;
+  top: 100px;
+  margin-left: 200px;
+  margin-right: 300px;
+  padding: 15px;
+}
+.contact {
+  background-color: #f58634;
+  text-align: center;
+}
+.three a {
+  color: #3e4095;
+  font-size: 30px;
+  text-decoration: none;
+  margin-top: 20px;
+}
+.contact1 ion-icon {
+  font-size: 30px;
+  color: #f58634;
+  position: relative;
+  left: -160px;
+  top: 45px;
+}
+@media (max-width: 780px) {
+  body {
+    flex-direction: column;
+  }
+  .navbar a {
+    display: none;
+  }
+  #brandlogo {
+    width: 100%;
+    flex-direction: column;
+  }
+  .toggler {
+    display: inline-block;
+    font-size: 30px;
+    color: white;
+    margin-left: -100px;
+  }
+  .slide {
+    flex-direction: column;
+  }
+  .slide img {
+    width: 100%;
+  }
+  .intro {
+    flex-direction: column;
+  }
+  .about {
+    flex-direction: column;
+  }
+  .content {
+    flex-direction: column;
+    position: relative;
+    top: 100px;
+    left: 0px;
+  }
+  .about img {
+    width: 100%;
+    position: relative;
+    left: 0px;
+  }
+  .footer {
+    flex-direction: column;
+  }
+}
